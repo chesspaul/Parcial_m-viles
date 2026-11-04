@@ -1,0 +1,38 @@
+name: patitas_app
+description: "Reporte de animales en situación de calle con foto, nota de voz y ubicación GPS."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Almacenamiento local (SQLite) y rutas de archivos
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  path_provider: ^2.1.5
+
+  # Gadget 1: multimedia (cámara y galería)
+  image_picker: ^1.1.2
+
+  # Gadget 2: audio (nota de voz guardada + dictado voz a texto)
+  record: ^6.0.0
+  audioplayers: ^6.1.0
+  speech_to_text: ^7.0.0
+
+  # Gadget 3: geolocalización y mapas (OpenStreetMap, sin API key)
+  geolocator: ^13.0.2
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
